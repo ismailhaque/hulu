@@ -146,15 +146,6 @@ body{
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 576px) {
-    .row>* {
-        margin-bottom: 15px !important;
-    }
-    .Other_vip .row div{
-        flex-basis: 48%;
-    }
-}
-
 .vip .vip_con .task_sec2_col1{
     background: linear-gradient(90deg,#5d8bf8,#3e71ea);
 }
@@ -191,4 +182,106 @@ body{
         font-size: 12px;
         padding: 2px 11px;
         color: #b79985;
+}
+.profile_sec1{
+    max-width: 768px;
+    margin:  0 auto;
+    background: #f5f8ff;
+    padding: 20px;
+}
+.profile_sec1 .all-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.profile_sec1 .all-content .content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.profile_sec1 .all-content .content .des h3{
+    font-size: 20px;
+}
+.profile_sec1 .all-content .content .des p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.profile_sec1 .available-balance{
+    background-image: url(../img/zu1.420b893d.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.profile_sec1 .available-balance .content h3{
+    font-size: 20px;
+    color: #fff;
+}
+.profile_sec1 .available-balance .content p{
+    font-size: 20px;
+    color: #fff;
+}
+.profile_sec1 .seal_list ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.profile_sec1 .seal_list ul li{
+    color: #4c4c4c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+.profile-sec2 .header_container{
+    background: #fff;
+}
+.records-sec1 .nav {
+    background: #5d8cf8;
+    color: #fff;
+    justify-content: space-between;
+}
+.records-sec1 .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.nav-pills .nav-link.active {
+    color: #fff;
+    background: none;
+    border-radius: 0;
+    border-bottom: 2px solid #fff;
+}
+.Daily .card{
+    margin-bottom: 15px;
+    flex-basis: 24%;
+    background: #f7f7f7;
+}
+.team-report .card{
+    margin-bottom: 20px;
+    flex-basis: 31%;
+    background: #f7f7f7;
+}
+@media screen and (max-width: 576px) {
+    .row>* {
+        margin-bottom: 15px !important;
+    }
+    .Other_vip .row div{
+        flex-basis: 48%;
+    }
+    .Daily .card{
+        flex-basis: 48%;
+    }
+    .team-report .card{
+        margin-bottom: 10px;
+        flex-basis: 49%;
+        background: #f7f7f7;
+    }
 }
