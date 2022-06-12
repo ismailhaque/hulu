@@ -43,7 +43,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background: #fff;
     padding: 10px 20px;
 }
@@ -81,7 +81,7 @@ body{
     margin: 10px 0px;
     display: flex;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 .rewards .content ul li{
@@ -211,8 +211,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100px;
-    padding: 20px;
+    padding: 10px 20px 0;
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -268,25 +268,6 @@ body{
     margin-bottom: 20px;
     flex-basis: 31%;
     background: #f7f7f7;
-}
-@media screen and (max-width: 576px) {
-    .row>* {
-        margin-bottom: 15px !important;
-    }
-    .Other_vip .row div{
-        flex-basis: 48%;
-    }
-    .Daily .card{
-        flex-basis: 48%;
-    }
-    .team-report .card{
-        margin-bottom: 10px;
-        flex-basis: 49%;
-        background: #f7f7f7;
-    }
-    .records-sec1 .nav {
-        --bs-nav-link-padding-x: 0;
-    }
 }
 
 /* cotact page css */
@@ -417,4 +398,59 @@ button, .submit-btn:hover{
   .error {
     color: #ec1c24;
   }
+.profile-sec2 ul li{
+    flex-basis: 23%;
+}
+.profile-sec3 ul li{
+    flex-basis: 31%;
+}
+.profile-sec2 ul li a{
+    text-align: center;
+}
+.profile-sec3 ul li a{
+    text-align: center;
+}
+ol, ul{
+    padding-left: 10px;
+}
+.profile_sec1 .all-content .content .image img{
+    width: 100px;
+    margin-right: 16px;
+}
 
+@media screen and (max-width: 576px) {
+    .row>* {
+        margin-bottom: 15px !important;
+    }
+    .Other_vip .row div{
+        flex-basis: 48%;
+    }
+    .Daily .card{
+        flex-basis: 48%;
+    }
+    .team-report .card{
+        margin-bottom: 10px;
+        flex-basis: 49%;
+        background: #f7f7f7;
+    }
+    .records-sec1 .nav {
+        --bs-nav-link-padding-x: 0;
+    }
+    .profile_sec1 .all-content .content .image img{
+        width: 70px;
+        margin-right: 10px;
+    }
+}
+.recharge-sec1 .container{
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.recharge-sec1 .container h3{
+    font-size: 18px;
+    font-family: 400;
+}
+.recharge-sec1 .container p{
+    font-size: 14px;
+    font-family: 200;
+}
